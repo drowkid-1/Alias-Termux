@@ -35,7 +35,7 @@ except OSError:
 else:
     print("..")
 #=======================================[init.py]=========================================>
-
+os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../home/KeysTermux/codes/.banners')
 #=======================================[git clone]=========================================>
 try:
     f = open(".gc", "a", encoding="utf8")
