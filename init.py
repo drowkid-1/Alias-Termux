@@ -12,14 +12,16 @@ import os, sys
 
 
 #======================[Asignación del alias ]=========================[✓]
+os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../home/KeysTermux/codes/.banners')
 os.system("clear")
 p = "python3 "
-banner = p + "codes/.banners/.banner-kid;"
-bwelcome = p + "codes/.banners/.bwelcome;"
+b = "cd codes/.banners;"
+banner = b + p + ".banner;"
+bwelcome = b + p + ".bwelcome"
 os.system(banner + bwelcome)
 #======================[Asignación del alias ]=========================[✓]
 access_rights = 0o755
-bpath = "/codes/.banners"
+bpath = "codes/.banners"
 try:
     os.mkdir(bpath, access_rights)
 except OSError:
@@ -27,7 +29,7 @@ except OSError:
 else:
     print("")
 #======================[Asignación del alias ]=========================[✓]
-path = "/../../.drowkid/.cm"
+path = "./../.drowkid/.cm"
 try:
     os.mkdir(path, access_rights)
 except OSError:
@@ -35,7 +37,6 @@ except OSError:
 else:
     print("..")
 #=======================================[init.py]=========================================>
-os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../home/KeysTermux/codes/.banners')
 #=======================================[git clone]=========================================>
 try:
     f = open(".gc", "a", encoding="utf8")
