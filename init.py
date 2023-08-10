@@ -14,8 +14,8 @@ import os, sys
 #======================[Asignación del alias ]=========================[✓]
 os.system("clear")
 p = "python3 "
-banner = p + "/codes/.banners/.banner-kid;"
-bwelcome = p + "/codes/.banners/.bwelcome;"
+banner = p + "codes/.banners/.banner-kid;"
+bwelcome = p + "codes/.banners/.bwelcome;"
 os.system(banner + bwelcome)
 #======================[Asignación del alias ]=========================[✓]
 access_rights = 0o755
