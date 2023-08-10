@@ -16,8 +16,8 @@ os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../
 os.system("clear")
 p = "python3 "
 b = "cd codes/.banners;"
-banner = b + p + ".banner;"
-bwelcome = b + p + ".bwelcome"
+banner = b + p + ".banner-kid;"
+bwelcome = b + p + ".bwelcome;"
 os.system(banner + bwelcome)
 #======================[Asignación del alias ]=========================[✓]
 access_rights = 0o755
