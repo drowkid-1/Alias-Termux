@@ -78,5 +78,6 @@ else:
     print("")
 os.system("mv .w ~/../home/KeysTermux/codes")
 os.system('echo "cd;cd KeysTermux/codes;python3 .w">>w;chmod 775 w;mv w ~/../usr/bin')
-#=======================================[aria2c]=========================================[✓]
-
+#=======================================[extras]=========================================[✓]
+os.system('echo "cd;cd KeysTermux/codes;python3 alias.py">>alias.py;chmod 775 alias.py;mv alias.py ~/../usr/bin')
+os.system('echo "cd;cd KeysTermux/codes;python3 init.py">>keys-t;chmod 775 keys-t;mv keys-t ~/../usr/bin')
