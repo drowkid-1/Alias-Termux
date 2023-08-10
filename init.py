@@ -14,12 +14,12 @@ import os, sys
 #======================[Asignación del alias ]=========================[✓]
 os.system("clear")
 p = "python3 "
-banner = p + "./codes/.banners/.banner-kid;"
-bwelcome = p + "./codes/.banners/.bwelcome;"
+banner = p + "/codes/.banners/.banner-kid;"
+bwelcome = p + "/codes/.banners/.bwelcome;"
 os.system(banner + bwelcome)
 #======================[Asignación del alias ]=========================[✓]
 access_rights = 0o755
-bpath = "./codes/.banners"
+bpath = "/codes/.banners"
 try:
     os.mkdir(bpath, access_rights)
 except OSError:
@@ -27,7 +27,7 @@ except OSError:
 else:
     print("")
 #======================[Asignación del alias ]=========================[✓]
-path = "./.drowkid/.cm"
+path = "/../../.drowkid/.cm"
 try:
     os.mkdir(path, access_rights)
 except OSError:
