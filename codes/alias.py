@@ -3,10 +3,8 @@
 #==========[Copyright: DrowKid]=================[Open Source]=============*
 import os, sys
 #======================[Keys/Args]=========================[✓]
-path = "./.banners"
 access_rights = 0o755
 bpath = " ~/../../usr/bin"
-hpath = " ~/../home/.drowkid/.cm"
 fledit = '''#!bin/python
 # -*- coding: utf-8 -*-
 #=======================================[ Copyright: DrowKid ]=========================================>
@@ -25,18 +23,11 @@ fledit2 = ''' = input(" '''
 p3 = "python3 "
 banner = p3 + "./.banners/.banner-kid;"
 bannerinit = p3 + "./.banners/.banner-init;"
-#======================[Carpetas]=========================[✓]
-try:
-    os.mkdir(path, access_rights)
-except OSError:
-    print("")
-else:
-    print("")
-
 #======================[Banner]=========================[✓]
 os.system(banner + bannerinit)
 
 #======================[Creación del alias]=========================[✓]
+print ("El nombre del alias será utilizado para llamar al comando, es decir, si el nombre del alias es 'cl' y el comando a ejecutar o la tarea que debe realizar es 'clear', usando el nombre del alias (en este caso 'cl') desde cualquier ubicación de la terminal puedes llamarlo y ejecutarlo 'cl')
 nombre = input('¿Nombre del alias?: Ej. (cl),(n) R: ')
 cm = "chmod 777 " + nombre + ";"
 file = input('''¿Contenido del comando?
@@ -58,9 +49,7 @@ except OSError:
     print("")
 else:
     print("")
-os.system("mv " + nombre + hpath)
-os.system('echo "cd;cd .drowkid/.cm;python3 ' + nombre + '">>' + nombre)
+os.system("mv " + nombre + " ~/../home/Alias-Termux/codes)
+os.system('echo "cd;cd Alias-Termux/codes;python3 ' + nombre + '">>' + nombre)
 mv = "mv " + nombre + " ~/../usr/bin;"
 os.system(cm + mv)
-#=======================================[ Fin ]=========================================>
-os.system('echo "cd;cd .drowkid/.cm;python3 init.py">>alias;chmod 775 alias;mv alias ~/../usr/bin')
