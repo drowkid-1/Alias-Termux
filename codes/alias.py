@@ -27,7 +27,7 @@ bannerinit = p3 + "./.banners/.banner-init;"
 os.system(banner + bannerinit)
 
 #======================[Creación del alias]=========================[✓]
-print ("El nombre del alias será utilizado para llamar al comando, es decir, si el nombre del alias es 'cl' y el comando a ejecutar o la tarea que debe realizar es 'clear', usando el nombre del alias (en este caso 'cl') desde cualquier ubicación de la terminal puedes llamarlo y ejecutarlo 'cl')
+print ("El nombre del alias será utilizado para llamar al comando, es decir, si el nombre del alias es 'cl' y el comando a ejecutar o la tarea que debe realizar es 'clear', usando el nombre del alias (en este caso 'cl') desde cualquier ubicación de la terminal puedes llamarlo y ejecutarlo 'cl'")
 nombre = input('¿Nombre del alias?: Ej. (cl),(n) R: ')
 cm = "chmod 777 " + nombre + ";"
 file = input('''¿Contenido del comando?
@@ -48,8 +48,7 @@ try:
 except OSError:
     print("")
 else:
-    print("")
-os.system("mv " + nombre + " ~/../home/Alias-Termux/codes)
-os.system('echo "cd;cd Alias-Termux/codes;python3 ' + nombre + '">>' + nombre)
-mv = "mv " + nombre + " ~/../usr/bin;"
-os.system(cm + mv)
+    print("") 
+os.system('echo "cd;cd Alias-Termux/codes;python3 ' + nombre + '">>' + "." + nombre)
+mv = "mv " + "." + nombre + " ~/../usr/bin;"
+os.system(mv)
