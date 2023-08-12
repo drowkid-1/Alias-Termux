@@ -3,9 +3,24 @@
 #==========[Copyright: DrowKid]=================[Open Source]=============*
 import os, sys
 #======================[Keys/Args]=========================[✓]
-access_rights = 0o755
-bpath = " ~/../../usr/bin"
-fledit = '''#!bin/python
+banner = "cd;cd Alias-Termux/codes/.banners;python3 .banner-kid;"
+bannerinit = "cd;cd Alias-Termux/codes/.banners;python3 .banner-init;"
+#==================================[Banner]=======================================[✓]
+os.system(banner)
+os.system(bannerinit)
+
+#==================================[Alias]=======================================[✓]
+print ("El nombre del alias será utilizado para llamar al comando, es decir, si el nombre del alias es 'cl' y el comando a ejecutar o la tarea que debe realizar es 'clear', usando el nombre del alias (en este caso 'cl') desde cualquier ubicación de la terminal puedes llamarlo y ejecutarlo 'cl'")
+nombre = input('¿Nombre del alias?: Ej. (cl),(n) R: ')
+name = '.' + nombre 
+chm = "chmod 777 " + nombre + ";"
+comando = input('''¿Contenido del comando?
+Ej: "clear", "wget". R: ''')
+pregunta = input('''¿Qué pregunta será realizada para ejecutar el comando?
+Ej: "¿Cuál es la url del repositorio?(para git clone). R: ''')
+cierre = '''")'''
+
+alias1 = '''#!bin/python
 # -*- coding: utf-8 -*-
 #=======================================[ Copyright: DrowKid ]=========================================>
 #
@@ -19,36 +34,18 @@ import os, sys
 
 
 '''
-fledit2 = ''' = input(" '''
-p3 = "python3 "
-banner = p3 + "./.banners/.banner-kid;"
-bannerinit = p3 + "./.banners/.banner-init;"
-#======================[Banner]=========================[✓]
-os.system(banner + bannerinit)
-
-#======================[Creación del alias]=========================[✓]
-print ("El nombre del alias será utilizado para llamar al comando, es decir, si el nombre del alias es 'cl' y el comando a ejecutar o la tarea que debe realizar es 'clear', usando el nombre del alias (en este caso 'cl') desde cualquier ubicación de la terminal puedes llamarlo y ejecutarlo 'cl'")
-nombre = input('¿Nombre del alias?: Ej. (cl),(n) R: ')
-cm = "chmod 777 " + nombre + ";"
-file = input('''¿Contenido del comando?
-Ej: "clear", "wget". R: ''')
-pregunta = input('''¿Qué pregunta será realizada para ejecutar el comando?
-Ej: "¿Cuál es la url del repositorio?(para git clone). R: ''')
-fledit3 = pregunta
-fl = '''")'''
-comando = file
-com = comando + ''' " + ''' + nombre + ''' )'''
-fledit1 = nombre + fledit2 + fledit3 + '''")''' + '''
-os.system("''' + com
+alias2 = nombre + ''' = input("''' + pregunta + cierre + '''
+os.system (' ''' + comando  + ''' ' + ''' + nombre + ''' )'''
+bin = 'echo "cd;cd Alias-Termux/codes/.codes;python3 .' + nombre + '">>' + nombre + ';'
 #======================[Asignación del alias ]=========================[✓]
 try:
-    f = open(nombre, "a", encoding="utf8")
-    f.write(fledit +fledit1)
+    f = open(name, "a", encoding="utf8")
+    f.write(alias1 + alias2)
     f.close()
 except OSError:
     print("")
 else:
     print("") 
-os.system('echo "cd;cd Alias-Termux/codes;python3 ' + nombre + '">>' + "." + nombre)
-mv = "mv " + "." + nombre + " ~/../usr/bin;"
-os.system(mv)
+os.system('mv ' + name + ' ~/../home/Alias-Termux/codes/.codes')
+os.system(bin +chm + 'mv ' + nombre + ' ~/../usr/bin')
+
