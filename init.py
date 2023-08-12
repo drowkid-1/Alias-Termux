@@ -12,7 +12,6 @@ import os, sys
 
 
 #======================[Asignación del alias ]=========================[✓]
-os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../home/Alias-Termux/codes/.banners')
 os.system("clear")
 p = "python3 "
 b = "cd codes/.banners;"
