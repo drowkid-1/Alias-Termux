@@ -12,7 +12,7 @@ import os, sys
 
 
 #======================[Asignación del alias ]=========================[✓]
-os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../home/KeysTermux/codes/.banners')
+os.system('mv .bwelcome .banngc .bannw .bannergit .banner-kid .banner-init ~/../home/AliasTermux/codes/.banners')
 os.system("clear")
 p = "python3 "
 b = "cd codes/.banners;"
@@ -55,8 +55,8 @@ except OSError:
     print("")
 else:
     print("")
-os.system("mv .gc ~/../home/KeysTermux/codes")
-os.system('echo "cd;cd KeysTermux/codes;python3 .gc">>gc;chmod 775 gc;mv gc ~/../usr/bin')
+os.system("mv .gc ~/../home/AliasTermux/codes")
+os.system('echo "cd;cd AliasTermux/codes;python3 .gc">>gc;chmod 775 gc;mv gc ~/../usr/bin')
 #=======================================[WGET]=========================================[✓]
 
 try:
@@ -66,7 +66,7 @@ import os, sys, time, requests
 
 from time import sleep
 
-os.system('cd;cd KeysTermux/codes/.banners;python3 .bannw')
+os.system('cd;cd AliasTermux/codes/.banners;python3 .bannw')
 sleep(1)
 
 w = "wget "
@@ -77,8 +77,8 @@ except OSError:
     print("")
 else:
     print("")
-os.system("mv .w ~/../home/KeysTermux/codes")
-os.system('echo "cd;cd KeysTermux/codes;python3 .w">>w;chmod 775 w;mv w ~/../usr/bin')
+os.system("mv .w ~/../home/AliasTermux/codes")
+os.system('echo "cd;cd AliasTermux/codes;python3 .w">>w;chmod 775 w;mv w ~/../usr/bin')
 #=======================================[extras]=========================================[✓]
-os.system('echo "cd;cd KeysTermux/codes;python3 alias.py">>alias.py;chmod 775 alias.py;mv alias.py ~/../usr/bin')
-os.system('echo "cd;cd KeysTermux/codes;python3 init.py">>keys-t;chmod 775 keys-t;mv keys-t ~/../usr/bin')
+os.system('echo "cd;cd AliasTermux/codes;python3 alias.py">>alias.py;chmod 775 alias.py;mv alias.py ~/../usr/bin')
+os.system('echo "cd;cd AliasTermux/codes;python3 init.py">>keys-t;chmod 775 alias-t;mv alias-t ~/../usr/bin')
