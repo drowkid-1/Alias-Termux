@@ -14,28 +14,12 @@ import os, sys
 #======================[Asignación del alias ]=========================[✓]
 os.system("clear")
 p = "python3 "
-b = "cd codes/.banners;"
+b = "cd;cd Alias-Termux/codes/.banners;"
 banner = b + p + ".banner-kid;"
 bwelcome = b + p + ".bwelcome;"
-os.system(banner + bwelcome)
-#======================[Asignación del alias ]=========================[✓]
-access_rights = 0o755
-bpath = "codes/.banners"
-try:
-    os.mkdir(bpath, access_rights)
-except OSError:
-    print("")
-else:
-    print("")
-#======================[Asignación del alias ]=========================[✓]
-path = "./../.drowkid/.cm"
-try:
-    os.mkdir(path, access_rights)
-except OSError:
-    print("")
-else:
-    print("..")
-#=======================================[init.py]=========================================>
+os.system(banner)
+os.system(bwelcome)
+
 #=======================================[git clone]=========================================>
 try:
     f = open(".gc", "a", encoding="utf8")
