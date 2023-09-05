@@ -8,7 +8,9 @@
 
 <h2 align="left">Instalación:</h2>
 
-<p align="left"><code>git clone https://github.com/drowkid-1/Alias-Termux;cd Alias-Termux;chmod 775 init.sh;bash init.sh</code></p>
+'''
+git clone https://github.com/drowkid-1/Alias-Termux;cd Alias-Termux;chmod 775 init.sh;bash init.sh
+'''
 
 <h2 align="left">Comandos de uso: </h2>
 <code>alias-termux</code> = comandos predeterminados del repositorio Alias-Termux </ br>
